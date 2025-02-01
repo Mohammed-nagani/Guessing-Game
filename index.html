@@ -3,34 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <p style="color: brown; background-color: burlywood">
-    <marquee>welcome to my website Guessing game.</marquee>
-  </p>
-  <header
-    class="inst.header"
+  <p
     style="
-      justify-content: space-around;
-      height: 18vh;
-      width: 100%;
-      background-color: darkslategray;
-      text-align: center;
-      font-family: cursive;
-      font-size: xx-large;
-      color: gainsboro;
-      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 5vh;
+      color: brown;
+      background-color: burlywood;
     "
   >
-    <p style="padding-top: 30px">Welcome To Guessing Game</p>
-  </header>
+    <marquee>welcome to my website Guessing game.</marquee>
+  </p>
   <body>
+    <header
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        background-color: darkslategray;
+        text-align: center;
+        font-family: cursive;
+        font-size: xx-large;
+        color: gainsboro;
+        margin: 0;
+      "
+    >
+      <p>Welcome To Guessing Game</p>
+    </header>
     <section
       style="
-        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 75vh;
         width: 100%;
         background-color: springgreen;
-        margin: 0px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
           Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
@@ -39,8 +52,10 @@
         font-family: cursive;
       "
     >
-      <p>Instruction To Play Game</p>
-      <ol>
+      <p style="margin-bottom: 20px; font-size: x-large; font-weight: bold">
+        Instruction To Play Game
+      </p>
+      <ol style="padding: 20px">
         <li>number is hidden in ?</li>
         <li>You have to guess the number in 10 ATTEMPTS</li>
         <li>if guessed number is more than answer you will indicated</li>
@@ -49,31 +64,17 @@
       </ol>
     </section>
     <section>
-      <p>
-        <a
-          href="game.html"
+      <a href="game.html">
+        <button
           style="
-            height: 20px;
-            background-color: darkslateblue;
-            font-family: 'Times New Roman', Times, serif;
-            padding-left: 620px;
-            padding-right: 620px;
-            color: antiquewhite;
+            width: 100%;
+            height: 10vh;
+            background-color: rgba(224, 157, 12, 0.63);
           "
         >
-          play Game
-        </a>
-      </p>
-    </section>
-    <section
-      style="
-        height: 30px;
-        text-align: center;
-        font-family: cursive;
-        background-color: darkcyan;
-      "
-    >
-      ---------Thank You----------
+          Play Game
+        </button></a
+      >
     </section>
   </body>
 </html>
